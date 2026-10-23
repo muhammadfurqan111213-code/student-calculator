@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Result System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Result System</h2>
+
+    <div class="form-group">
+        <label>Student Name</label>
+        <input type="text" id="studentName" placeholder="Enter student name">
+    </div>
+
+    <div class="form-group">
+        <label>English (Out of 100)</label>
+        <input type="number" id="english">
+    </div>
+
+    <div class="form-group">
+        <label>Math (Out of 100)</label>
+        <input type="number" id="math">
+    </div>
+
+    <div class="form-group">
+        <label>Science (Out of 100)</label>
+        <input type="number" id="science">
+    </div>
+
+    <div class="form-group">
+        <label>Computer (Out of 100)</label>
+        <input type="number" id="computer">
+    </div>
+
+    <div class="form-group">
+        <label>Urdu (Out of 100)</label>
+        <input type="number" id="urdu">
+    </div>
+
+    <button onclick="calculateResult()">Calculate Result</button>
+
+    <div class="result" id="result">
+        <h3>Result Card</h3>
+        <p><strong>Name:</strong> <span id="rName"></span></p>
+        <p><strong>Total Marks:</strong> <span id="totalMarks"></span></p>
+        <p><strong>Obtained Marks:</strong> <span id="obtainedMarks"></span></p>
+        <p><strong>Percentage:</strong> <span id="percentage"></span></p>
+        <p><strong>Grade:</strong> <span id="grade"></span></p>
+        <p><strong>Status:</strong> <span id="status"></span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
